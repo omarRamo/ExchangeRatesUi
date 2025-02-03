@@ -1,0 +1,13 @@
+<div class="conversion" *ngIf="exchangeRate">
+    <h3>Convertir depuis EUR</h3>
+  
+    <label for="eurAmount">Montant EUR :</label>
+    <input id="eurAmount" type="number" [(ngModel)]="amountInEUR" />
+  
+    <div class="results">
+      <p>EUR -> USD : <strong>{{ amountInEUR * exchangeRate.USD | number:'1.4-4' }}</strong></p>
+      <p>EUR -> GBP : <strong>{{ amountInEUR * exchangeRate.GBP | number:'1.4-4' }}</strong></p>
+      <p>EUR -> CHF : <strong>{{ amountInEUR * exchangeRate.CHF | number:'1.4-4' }}</strong></p>
+    </div>
+  </div>
+  

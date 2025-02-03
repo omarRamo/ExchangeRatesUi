@@ -1,0 +1,8 @@
+<aside class="menu" *ngIf="exchangeRate">
+    <h3>Taux de change</h3>
+    <p>1 EUR = <strong>{{ exchangeRate.USD }}</strong> USD</p>
+    <p>1 EUR = <strong>{{ exchangeRate.GBP }}</strong> GBP</p>
+    <p>1 EUR = <strong>{{ exchangeRate.CHF }}</strong> CHF</p>
+    <p class="updated">Mise à jour : {{ exchangeRate.updated }}</p>
+  </aside>
+  
