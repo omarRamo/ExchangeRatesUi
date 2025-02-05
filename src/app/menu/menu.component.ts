@@ -1,4 +1,3 @@
-// src/app/components/menu.component.ts
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ExchangeRate } from '../model/exchange-rate.model';
